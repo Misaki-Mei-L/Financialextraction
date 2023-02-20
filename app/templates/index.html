@@ -1,0 +1,38 @@
+<!doctype html>
+<html>
+<head>
+    <title>每日公告信息</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='images/background.jpeg') }}')">
+    <div class="logo-container">
+        <img class="logo" src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="公司 Logo">
+        <p class="slogan">@华福金工 all right received</p>
+    </div>
+    <h1 class="title">每日公告信息</h1>
+    <table>
+        <thead>
+            <tr>
+                <th><strong>标题</strong></th>
+                <th><strong>时间</strong></th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for news in news_list %}
+            <tr>
+                <td class="newstitle"><a href="{{ news.docturl }}">{{ news.announcementTitle }}</a></td>
+                <td class="time">{{ news.time }}</td>
+
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="window.open('/news?url={{ news.docturl }}&title={{news.announcementTitle }}', '_blank')">详情</button>
+                </td>
+                <td>
+                    <button type="button" class="btn btn-primary" onclick="window.open('{{ news.docturl }}', '_blank')">原件</button>
+                </td>
+
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</body>
+</html>

@@ -1,0 +1,102 @@
+.header {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    width: 300px;
+    height: 150px;
+    margin-right: 20px;
+}
+
+.title {
+    text-align: center;
+    font-size: 36px;
+    margin: 0;
+}
+.newstitle {
+    text-align: left;
+    font-size: 16px;
+    margin: 0;
+}
+button {
+  background-color: #4CAF50; /* Green background color */
+  border: none; /* Remove button border */
+  color: white; /* White text */
+  padding: 12px 30px; /* Padding */
+  text-align: center; /* Center text */
+  text-decoration: none; /* Remove underline */
+  display: inline-block; /* Display as inline block */
+  font-size: 16px; /* Font size */
+  margin: 4px 2px; /* Margin */
+  cursor: pointer; /* Add hover effect */
+  border-radius: 20px; /* Add rounded corners */
+}
+
+
+.logo-container {
+  position: relative;
+}
+.slogan {
+  position: relative;
+  bottom: 50px;
+  left: 100px;
+  right: 0;
+  text-align: left;
+  background-color: rgba(0, 0, 0, 0);
+  color: black;
+  padding: 5px;
+}
+
+table {
+    margin: 20px auto;
+    border-collapse: collapse;
+    width: 80%;
+}
+table td:last-child {
+    border: none;
+    width: 30px;
+}
+td:nth-last-child(2) {
+   border: none;
+    width: 30px;
+}
+td:nth-child(3) {
+  text-align: center;
+  color: black;
+  width: 50px;
+}
+thead {
+    background-color: #f7f7f7;
+}
+
+th {
+    padding: 10px;
+    font-weight: bold;
+    text-align: left;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+td.title {
+    font-weight: bold;
+}
+
+td.time {
+    color: #999;
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}

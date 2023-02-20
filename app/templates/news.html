@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+    <title>每日公告信息</title>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body style="background-image: url('{{ url_for('static', filename='images/background.jpeg') }}')">
+    <div class="logo-container">
+        <img class="logo" src="{{ url_for('static', filename='images/logo.jpeg') }}" alt="公司 Logo">
+        <p class="slogan">@华福金工 all right received</p>
+    </div>
+    <h1 class="title">{{title}}</h1>
+    <table>
+        <tbody>
+        {% for infoe in info %}
+            <tr>
+                <td class="newstitle">{{ infoe[0] }}:</td>
+                <td class="time">{{ infoe[1] }}:</td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+</body>
+</html>
