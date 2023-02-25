@@ -35,10 +35,10 @@ if __name__ == '__main__':
     # 每小时运行一次main函数
     main()
     os.system('python ./app/app.py')
-    # schedule.every().hour.do(main)
-    # while True:
-    #     schedule.run_pending()
-    #     time.sleep(1)
+    schedule.every().hour.do(main)
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
 
 
 
