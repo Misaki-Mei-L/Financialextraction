@@ -48,5 +48,5 @@ def view_news():
     return render_template('news.html', info=result,title=title)
 
 #getinfo('http://static.cninfo.com.cn/finalpage/2023-01-19/1215668073.PDF')
-app.run(host = "127.0.0.1", port = int("1214"))
+app.run(host = "/", port = int("1214"))
 
